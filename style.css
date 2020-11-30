@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.background {
+    background-image: url(bckgrd.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.mask {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+.headline {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 30%;
+    padding-bottom: 30%;
+    background-image: url(logo-transparent.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.headline h1 {
+    font-size: 36px;
+    margin: 30px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.amount-input {
+    line-height: 190%;
+}
+
+.currency-select {
+    height: 30px;
+}
+
+.convertBtn {
+    padding: 5px 20px;
+}
+
+.amount-output {
+    font-size: 16px;
+    font-weight: 700;
+}
