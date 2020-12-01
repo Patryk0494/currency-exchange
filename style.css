@@ -21,19 +21,43 @@ body {
 .mask {
     height: 100vh;
     background-color: rgba(255, 255, 255, .85);
+    position: relative;
 }
 
 .headline {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .logo {
-    width: 30%;
-    padding-bottom: 30%;
+    width: 20%;
+    padding-bottom: 20%;
     background-image: url(logo-transparent.png);
     background-position: center;
     background-size: cover;
+}
+
+.loader {
+    position: absolute;
+    top: calc(50% - 125px);
+    left: calc(50% - 125px);
+    display: none;
+    width: 250px;
+    padding-bottom: 250px;
+    background-image: url(logo-transparent.png);
+    background-position: center;
+    background-size: cover;
+    animation: loader 1s infinite ease-out;
+}
+
+@keyframes loader {
+    0% { 
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(360deg);
+    }
 }
 
 .headline h1 {
@@ -44,6 +68,7 @@ body {
 }
 
 .content {
+    margin: 30px auto;
     display: flex;
     gap: 10px;
     align-items: center;
