@@ -18,7 +18,7 @@ convertBtn.addEventListener("click", function() {
         setTimeout(function() {
             loader.style.display = "none";
             amountOutput.innerText = `Po przeliczniu na PLN to ${sum.toFixed(2)} zł.`;
-        }, 1300)
+        }, 2300)
     }).catch(error => {
         console.log("error: ", error);
     });
