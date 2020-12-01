@@ -10,7 +10,7 @@ convertBtn.addEventListener("click", function() {
     const amount = amountInput.value;
     let rateExchange;
     
-    fetch(`http://api.nbp.pl/api/exchangerates/rates/C/${currency}/today/`).then(response => response.json())
+    fetch(`https://api.nbp.pl/api/exchangerates/rates/C/${currency}/today/`).then(response => response.json())
     .then( function(response) {
         loader.style.display = "block";
         rateExchange = response.rates[0].ask;
